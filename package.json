@@ -1,6 +1,7 @@
 {
   "name": "duotone",
   "homepage": "https://teevik.github.io/duotone/",
+  "license": "MIT",
   "version": "1.0.0",
   "dependencies": {
     "@craco/craco": "^5.2.1",
