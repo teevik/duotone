@@ -1,0 +1,46 @@
+{
+  "name": "duotone",
+  "homepage": "https://teevik.github.io/duotone/",
+  "version": "1.0.0",
+  "dependencies": {
+    "@craco/craco": "^5.2.1",
+    "@types/file-saver": "^2.0.1",
+    "@types/ramda": "^0.26.9",
+    "@types/react": "^16.8.20",
+    "@types/react-color": "^3.0.1",
+    "@types/react-css-transition-replace": "^2.1.3",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.16",
+    "babel-plugin-styled-components": "^1.10.1",
+    "file-saver": "^2.0.2",
+    "focus-visible": "^5.0.0",
+    "gh-pages": "^2.0.1",
+    "polished": "^3.4.1",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-color": "^2.17.3",
+    "react-css-transition-replace": "^3.0.3",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.5",
+    "react-scripts": "^3.0.1",
+    "source-map-explorer": "^2.0.0",
+    "styled-components": "^4.3.1",
+    "styled-icons": "^8.1.0",
+    "typescript": "^3.5.2",
+    "typescript-styled-plugin": "^0.14.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer \"build/static/js/*.js\"",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

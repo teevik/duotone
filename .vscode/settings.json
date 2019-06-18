@@ -1,0 +1,29 @@
+{
+  "prettier.eslintIntegration": false,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#42b883",
+    "titleBar.inactiveBackground": "#42b88399",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#42b883",
+    "statusBarItem.hoverBackground": "#359268",
+    "statusBar.foreground": "#15202b"
+  }
+}
