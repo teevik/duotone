@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/duotone/static/js/main.6a740fbd.chunk.js",
+    "main.js.map": "/duotone/static/js/main.6a740fbd.chunk.js.map",
+    "runtime~main.js": "/duotone/static/js/runtime~main.f1813e63.js",
+    "runtime~main.js.map": "/duotone/static/js/runtime~main.f1813e63.js.map",
+    "static/js/2.235bedda.chunk.js": "/duotone/static/js/2.235bedda.chunk.js",
+    "static/js/2.235bedda.chunk.js.map": "/duotone/static/js/2.235bedda.chunk.js.map",
+    "index.html": "/duotone/index.html",
+    "precache-manifest.fa93ca326eac12b6c339ea4439d849d9.js": "/duotone/precache-manifest.fa93ca326eac12b6c339ea4439d849d9.js",
+    "service-worker.js": "/duotone/service-worker.js"
+  }
+}
