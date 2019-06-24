@@ -6,10 +6,14 @@ import styled, { css } from "styled-components"
 import { FileDownload } from "styled-icons/material/FileDownload"
 import { Fullscreen } from "styled-icons/material/Fullscreen"
 import { SwapHoriz } from "styled-icons/material/SwapHoriz"
-import { createDuotoneImage } from "../helpers/createDuotoneImage"
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import ImageWorker from "worker-loader!../workers/ImageWorker"
+import { getImageData } from "../helpers/getImageData"
 import { useIsFullscreen } from "../hooks/useIsFullscreen"
 import { mediaQueries } from "../styling/constants"
 import { ColorPicker } from "./ColorPicker"
+
+const imageWorker = new ImageWorker()
 
 const defaultShadowColor = {
   r: 0,
@@ -23,22 +27,33 @@ const defaultHighlightColor = {
   b: 79
 }
 
-interface UseDuotoneCanvasOptions {
+interface UseDuotoneCanvasProps {
   canvasRef: RefObject<HTMLCanvasElement>
   image: HTMLImageElement
   shadowColor: RGBColor
   highlightColor: RGBColor
 }
 
-function useDuotoneCanvas(options: UseDuotoneCanvasOptions) {
-  const { canvasRef, image, shadowColor, highlightColor } = options
+function useDuotoneCanvas(props: UseDuotoneCanvasProps) {
+  const { canvasRef, image, shadowColor, highlightColor } = props
 
   useEffect(() => {
     const canvas = canvasRef.current!
-    const ctx = canvas.getContext("2d")!
-    const imageData = createDuotoneImage(image, shadowColor, highlightColor)
-    ctx.putImageData(imageData, 0, 0)
-  }, [canvasRef, highlightColor, image, shadowColor])
+    const offscreenCanvas = canvas.transferControlToOffscreen()
+
+    imageWorker.postMessage({ type: "initialize", canvas: offscreenCanvas }, [
+      offscreenCanvas
+    ] as any)
+  }, [canvasRef])
+
+  useEffect(() => {
+    imageWorker.postMessage({
+      type: "drawDuotoneImage",
+      imageData: getImageData(image),
+      shadowColor,
+      highlightColor
+    })
+  }, [highlightColor, image, shadowColor])
 }
 
 interface ImageEditorProps {

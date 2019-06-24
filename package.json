@@ -28,7 +28,8 @@
     "styled-components": "^4.3.1",
     "styled-icons": "^8.1.0",
     "typescript": "^3.5.2",
-    "typescript-styled-plugin": "^0.14.0"
+    "typescript-styled-plugin": "^0.14.0",
+    "worker-loader": "^2.0.0"
   },
   "scripts": {
     "analyze": "source-map-explorer \"build/static/js/*.js\"",

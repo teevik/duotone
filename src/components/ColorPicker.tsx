@@ -40,7 +40,7 @@ export function ColorPicker(props: ColorPickerProps) {
         isOpen={pickerIsOpen}
         disableAlpha
         color={color}
-        onChangeComplete={colors => onChange(colors.rgb)}
+        onChange={colors => onChange(colors.rgb)}
       />
     </Container>
   )
