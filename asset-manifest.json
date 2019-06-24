@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/duotone/static/js/main.e5cf6c2a.chunk.js",
-    "main.js.map": "/duotone/static/js/main.e5cf6c2a.chunk.js.map",
+    "main.js": "/duotone/static/js/main.9b37ed4d.chunk.js",
+    "main.js.map": "/duotone/static/js/main.9b37ed4d.chunk.js.map",
     "runtime~main.js": "/duotone/static/js/runtime~main.eb9a30d4.js",
     "runtime~main.js.map": "/duotone/static/js/runtime~main.eb9a30d4.js.map",
-    "static/js/2.8da05f62.chunk.js": "/duotone/static/js/2.8da05f62.chunk.js",
-    "static/js/2.8da05f62.chunk.js.map": "/duotone/static/js/2.8da05f62.chunk.js.map",
+    "static/js/2.0863f6e3.chunk.js": "/duotone/static/js/2.0863f6e3.chunk.js",
+    "static/js/2.0863f6e3.chunk.js.map": "/duotone/static/js/2.0863f6e3.chunk.js.map",
     "b026123871adaf11c170.worker.js": "/duotone/b026123871adaf11c170.worker.js",
     "b026123871adaf11c170.worker.js.map": "/duotone/b026123871adaf11c170.worker.js.map",
     "index.html": "/duotone/index.html",
-    "precache-manifest.e8d731f8230743899f652d9eb3e8f281.js": "/duotone/precache-manifest.e8d731f8230743899f652d9eb3e8f281.js",
+    "precache-manifest.4426e7ce81f11a190a89e4b8d334ec31.js": "/duotone/precache-manifest.4426e7ce81f11a190a89e4b8d334ec31.js",
     "service-worker.js": "/duotone/service-worker.js"
   }
 }
