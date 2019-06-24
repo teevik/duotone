@@ -96,6 +96,7 @@ export function ImageEditor(props: ImageEditorProps) {
           Select new image
         </CanvasOverlay>
       </CanvasContainer>
+
       <Divider />
 
       <ColorControls>
