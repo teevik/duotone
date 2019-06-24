@@ -1,6 +1,6 @@
 {
-  "short_name": "Calculator",
-  "name": "Calculator",
+  "short_name": "Duotone Image Generator",
+  "name": "Duotone Image Generator",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
