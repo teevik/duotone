@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/duotone/precache-manifest.fa93ca326eac12b6c339ea4439d849d9.js"
+  "/duotone/precache-manifest.e8d731f8230743899f652d9eb3e8f281.js"
 );
 
 self.addEventListener('message', (event) => {
