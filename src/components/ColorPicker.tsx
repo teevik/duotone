@@ -1,6 +1,7 @@
 import { rgb, rgba } from "polished"
 import React, { useCallback, useRef, useState } from "react"
-import { ChromePicker, RGBColor } from "react-color"
+import { RGBColor } from "react-color"
+import ChromePicker from "react-color/lib/components/chrome/Chrome"
 import styled, { css } from "styled-components"
 import { useOnClickOutside } from "../hooks/useOnClickOutside"
 
